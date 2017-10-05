@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Academy_Control.Entities
 {
-    public class Valores
+    public class Valores:Generic
     {
         [Key]
         public Int32 ValorId { get; set; }

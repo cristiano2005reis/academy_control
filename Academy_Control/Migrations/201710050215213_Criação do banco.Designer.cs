@@ -13,7 +13,7 @@ namespace Academy_Control.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201710050142167_Criação do banco"; }
+            get { return "201710050215213_Criação do banco"; }
         }
         
         string IMigrationMetadata.Source

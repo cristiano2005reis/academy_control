@@ -1,0 +1,31 @@
+﻿@using Academy_Control.Entities
+@model List<Professores>
+@{
+    ViewBag.Title = "Lista de Professores";
+}
+
+<div class="row">
+    <div class="col-md-8">
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Código</th>
+                <th>Percentual</th>
+                <th>Obs</th>
+                <th>Data de Cadastro</th>
+            </tr>
+            @foreach (var professor in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(model => professor.Nome)</td>
+                    <td>@Html.DisplayFor(model => professor.Codigo)</td>
+                    <td>@Html.DisplayFor(model => professor.Percentual)</td>
+                    <td>@Html.DisplayFor(model => professor.Obs)</td>
+                    <td>@Html.DisplayFor(model => professor.Data_cadastro)</td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</div>

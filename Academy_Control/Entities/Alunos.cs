@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Academy_Control.Entities
 {
-    public class Alunos
+    public class Alunos:Generic
     {
         [Key]
         public Int32 AlunoId { get; set; }

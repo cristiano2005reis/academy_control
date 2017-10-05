@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Academy_Control.Entities
 {
-    public class Turmas
+    public class Turmas:Generic
     {
         [Key]
         public Int32 TurmaId { get; set; }

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Academy_Control.Entities
 {
-    public class Mensalidades
+    public class Mensalidades:Generic
     {
         [Key]
         public Int32 MensalidadeId { get; set; }

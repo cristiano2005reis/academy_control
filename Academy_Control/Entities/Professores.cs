@@ -4,14 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace Academy_Control.Entities
 {
-    public class Professores
+    public class Professores:Generic
     {
         [Key]
         public Int32 ProfessorId { get; set; }
-        public Int32 TurmaId { get; set; }
         
         public string Nome { get; set; }
         public string Codigo { get; set; }

@@ -1,0 +1,28 @@
+﻿@using Academy_Control.Entities
+@model Professores
+@{
+    ViewBag.Title = "Cadastro de Professores";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <fieldset>
+        <legend>Cadastro de Professor</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.Nome)
+                @Html.TextBoxFor(m => m.Nome)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Percentual)
+                @Html.TextBoxFor(m => m.Percentual)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Obs)
+                @Html.TextBoxFor(m => m.Obs)
+            </li>
+        </ol>
+        <input type="submit" value="Cadastro de Professor" />
+    </fieldset>
+}

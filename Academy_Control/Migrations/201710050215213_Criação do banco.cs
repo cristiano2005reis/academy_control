@@ -145,7 +145,6 @@ namespace Academy_Control.Migrations
                 c => new
                     {
                         ProfessorId = c.Int(nullable: false, identity: true),
-                        TurmaId = c.Int(nullable: false),
                         Nome = c.String(unicode: false),
                         Codigo = c.String(unicode: false),
                         Percentual = c.Decimal(nullable: false, precision: 18, scale: 2),

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Academy_Control.Entities
 {
-    public class Modalidades
+    public class Modalidades:Generic
     {
         [Key]
         public Int32 ModalidadeId { get; set; }
